@@ -13,12 +13,14 @@ import time
 import visdom
 import numpy as np
 
+# jiarulikang
+
 
 
 class FCN32s(nn.Module):
 
     def __init__(self, pretrained_net, n_class):
-        super().__init__()
+        super(FCN32s).__init__()
         self.n_class = n_class
         self.pretrained_net = pretrained_net
         self.relu    = nn.ReLU(inplace=True)
